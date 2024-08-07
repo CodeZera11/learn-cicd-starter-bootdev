@@ -20,7 +20,7 @@ func TestGetApiKey(t *testing.T) {
 		t.Fatalf("Error getting api key: %s", err.Error())
 	}
 
-	if key == "" {
+	if key != "" {
 		t.Fatalf("Key not found!")
 	}
 }
